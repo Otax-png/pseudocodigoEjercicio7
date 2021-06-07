@@ -1,0 +1,35 @@
+Algoritmo ejercicio7
+
+	Definir contadorPares, contadorImpares, contadorCeros como Entero
+	
+	contadorPares = 0
+	contadorImpares = 0 
+	contadorCeros = 0
+	
+	Para i <- 1 Hasta 15 Hacer
+		numero = azar(36)
+		Mostrar numero
+		si numero %2 = 0 Entonces
+			contadorPares = contadorPares + 1
+			
+		SiNo
+			si numero = 0 Entonces
+				contadorCeros = contadorCeros + 1
+				
+			SiNo
+				contadorImpares = contadorImpares + 1
+			FinSi
+			
+		FinSi
+		
+	FinPara
+	
+	porcentajePares = (contadorPares * 100)/15 
+	porcentajeImpares = (contadorImpares * 100)/15 
+	porcentajeCeros = (contadorCeros * 100)/15 
+	
+	Escribir "Porcentaje de numeros pares: ",porcentajePares,"%"
+	Escribir "Porcentaje de numeros impares: ",porcentajeImpares,"%"
+	Escribir "Porcentaje de ceros generados: ",porcentajeCeros,"%"
+	
+FinAlgoritmo
